@@ -6,9 +6,8 @@ i = 1
 for i in range(100):
     returnresult = primenumberproof(int(primenumber), i)
     if(returnresult != int):
-        break
-        print("Not an prime factor")
-        print(returnresult)
+        print("Skipping one prime factor")
+        continue
     else:
         numberofprimefactors.append(returnresult)
         continue
@@ -20,4 +19,3 @@ for v in int(primenumber) % 2:
     else:
         print("Operation successful for" + numberofprimefactors[z])
         z+=1
-
