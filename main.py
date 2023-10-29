@@ -13,10 +13,11 @@ for i in range(100):
         numberofprimefactors.append(returnresult)
         continue
 for v in int(primenumber) % 2:
-    power = primenumberproof(numberofprimefactors[z], v * 2)
+    power = primenumberproof(numberofprimefactors[z], int(numberofprimefactors[z]) % 2)
     if(returnresult != int):
         break
         print("Tried to reduce to the simplest form, failed opreation")
     else:
-        print("Opreation sucessful for" + numberofprimefactors[z])
+        print("Operation successful for" + numberofprimefactors[z])
         z+=1
+
